@@ -1,0 +1,116 @@
+01,Pintura vinílica blanca,02,100,10.50
+02,Pintura acrílica azul,02,100,11.00
+03,Pintura esmalte rojo,02,100,12.00
+04,Barniz mate,02,100,13.00
+05,Sellador acrílico,02,100,14.00
+06,Thinner universal,02,100,15.00
+07,Masilla para pared,02,100,16.00
+08,Pintura epóxica gris,02,100,17.00
+09,Cuadro moderno,03,100,18.00
+10,Espejo rectangular,03,100,19.00
+11,Alfombra pequeña,03,100,20.00
+12,Cojín decorativo,03,100,21.00
+13,Cortina de tela,03,100,22.00
+14,Lámpara de mesa,03,100,23.00
+15,Velas aromáticas,03,100,24.00
+16,Jarrón cerámico,03,100,25.00
+17,Mueble de jardín,04,100,26.00
+18,Sombrilla grande,04,100,27.00
+19,Parrilla portátil,04,100,28.00
+20,Maceta grande,04,100,29.00
+21,Fuente decorativa,04,100,30.00
+22,Césped artificial 1x1,04,100,31.00
+23,Iluminación exterior LED,04,100,32.00
+24,Toldos retráctiles,04,100,33.00
+25,Detergente en polvo 1kg,05,100,34.00
+26,Detergente líquido 500ml,05,100,35.00
+27,Jabón líquido manos,05,100,36.00
+28,Cloro 1L,05,100,37.00
+29,Desinfectante multiusos,05,100,38.00
+30,Limpiavidrios 500ml,05,100,39.00
+31,Trapeador,05,100,40.00
+32,Escoba de cerdas,05,100,41.00
+33,Planta ornamental pequeña,06,100,42.00
+34,Árbol frutal joven,06,100,43.00
+35,Semillas de flores,06,100,44.00
+36,Fertilizante orgánico 1kg,06,100,45.00
+37,Tierra abonada 5kg,06,100,46.00
+38,Maceta plástica mediana,06,100,47.00
+39,Pulverizador manual,06,100,48.00
+40,Herramienta de jardinería,06,100,49.00
+41,Sofá 3 plazas,07,100,50.00
+42,Sillón individual,07,100,51.00
+43,Mesa de centro,07,100,52.00
+44,Mesa comedor 4 sillas,07,100,53.00
+45,Cama matrimonial,07,100,54.00
+46,Colchón individual,07,100,55.00
+47,Escritorio oficina,07,100,56.00
+48,Estantería metálica,07,100,57.00
+49,Aceite de motor 1L,08,100,58.00
+50,Anticongelante 1L,08,100,59.00
+51,Líquido de frenos 500ml,08,100,60.00
+52,Batería automotriz,08,100,61.00
+53,Filtro de aceite,08,100,62.00
+54,Bujías estándar,08,100,63.00
+55,Balatas de freno,08,100,64.00
+56,Limpiaparabrisas,08,100,65.00
+49,Aceite de motor 1L,08,100,66.00
+50,Anticongelante 1L,08,100,67.00
+51,Líquido de frenos 500ml,08,100,68.00
+52,Batería automotriz,08,100,69.00
+53,Filtro de aceite,08,100,70.00
+54,Bujías estándar,08,100,71.00
+55,Balatas de freno,08,100,72.00
+56,Limpiaparabrisas,08,100,73.00
+57,Archivador metálico,09,100,74.00
+58,Caja organizadora plástica,09,100,75.00
+59,Estante de madera,09,100,76.00
+60,Organizador de escritorio,09,100,77.00
+61,Perchero de pie,09,100,78.00
+62,Cajonera pequeña,09,100,79.00
+63,Portadocumentos,09,100,80.00
+64,Bandeja de almacenamiento,09,100,81.00
+65,Lámpara de techo LED,10,100,82.00
+66,Lámpara de mesa moderna,10,100,83.00
+67,Lámpara de pie,10,100,84.00
+68,Aplique de pared,10,100,85.00
+69,Foco halógeno,10,100,86.00
+70,Lámpara solar exterior,10,100,87.00
+71,Lámpara decorativa,10,100,88.00
+72,Lámpara de noche,10,100,89.00
+73,Pintura acrílica verde,01,100,90.00
+74,Pintura esmalte negro,01,100,91.00
+75,Barniz brillante,01,100,92.00
+76,Masilla plástica,01,100,93.00
+77,Cuadro abstracto,02,100,94.00
+78,Espejo redondo,02,100,95.00
+79,Alfombra mediana,02,100,96.00
+80,Cortina blackout,02,100,97.00
+81,Mueble de patio,03,100,98.00
+82,Sombrilla pequeña,03,100,99.00
+83,Parrilla fija,03,100,100.00
+84,Maceta colgante,03,100,101.00
+85,Detergente en pastillas,04,100,102.00
+86,Limpiador de pisos,04,100,103.00
+87,Jabón antibacterial,04,100,104.00
+88,Cloro concentrado,04,100,105.00
+89,Planta decorativa grande,05,100,106.00
+90,Árbol frutal mediano,05,100,107.00
+91,Semillas vegetales,05,100,108.00
+92,Fertilizante líquido,05,100,109.00
+93,Sillón reclinable,06,100,110.00
+94,Mesa auxiliar,06,100,111.00
+95,Cama individual,06,100,112.00
+96,Estantería pequeña,06,100,113.00
+97,Aceite para motor 5W30,07,100,114.00
+98,Filtro de aire,07,100,115.00
+99,Limpiaparabrisas delantero,07,100,116.00
+100,Bujía premium,07,100,117.00
+101,Archivador de metal,08,100,118.00
+102,Caja organizadora grande,08,100,119.00
+103,Estante modular,08,100,120.00
+104,Organizador de cajones,08,100,121.00
+105,Lámpara de escritorio LED,09,100,122.00
+106,Lámpara de noche pequeña,09,100,123.00
+107,Lámpara de pie decorativa,09,100,124.00
+108,Aplique de pared moderno,09,100,125.00

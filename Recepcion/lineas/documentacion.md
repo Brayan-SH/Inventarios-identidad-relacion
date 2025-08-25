@@ -1,0 +1,1 @@
+> Id, Nombre Linea, Id_Categoria
