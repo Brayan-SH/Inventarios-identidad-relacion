@@ -1,9 +1,14 @@
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-# from pruebas import producto
+def vender() :
+    with open("Recepcion/lineas/lineas.txt", "r", encoding="utf-8", errors="ignore") as file:
+        lineas = file.readlines()
+        lineas = [line.strip().split(',') for line in lineas]
+        print(lineas)  # Acceder a las listas por indices.
 
-with open("productos.txt", "r") as file:
-    row = file.readlines()
-    row = [line.strip().split(',') for line in row]
-    print(row)  # Acceder a las listas por indices.
+
+# with open("Recepcion/lineas/lineas.txt", "r", encoding="utf-8", errors="ignore") as file:
+#     lineas = ''
+#     lineas = [line.strip().split(',') for line in lineas]
+#     print(lineas)  # Acceder a las listas por indices.
