@@ -1,0 +1,1 @@
+# Ingresar la información de los productos recibidos en el sistema: nombre, cantidad, serie, línea o categoría.
