@@ -13,13 +13,13 @@ def Menu_Asesor():
 
   match opcion:
     case '1':
-      funciones.consultar_codigo_productos.consultar_codigo_producto()
+      funciones.consultar_codigo_producto.consultar_codigo()
     case '2':
-      funciones.consultar_descripcion_producto()
+      funciones.consultar_descripcion_producto.consultar_descripcion()
     case '3':
-      funciones.consultar_por_categoria()
+      funciones.consultar_por_categoria.consultar_categoria()
     case '4':
-      funciones.consultar_stocks_bajos()
+      funciones.consultar_stocks_bajos.consultar_stocks()
     case '5':
       print('Saliendo...')
     case _:
