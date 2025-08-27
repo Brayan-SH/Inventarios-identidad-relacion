@@ -1,24 +1,41 @@
-class caja :
-  def __init__(self, numero_caja, codigo_producto, descripcion_producto) :
+class Caja :
+  
+  def Vender(self, numero_caja) :
     self.numero_caja = numero_caja
-    self.codigo_producto = codigo_producto
-    self.descripcion_producto = descripcion_producto
-
-  def vender(self) :
     print(f'-------  {self.numero_caja} -------')
 
-    descripcion_producto_or_codigo_producto = input('Ingrese la descripcion o codigo del producto : ')
-    cantidad = float(input('Ingrese la cantidad:'))
-    precio = 1 # jalar el precio del producto.txt
+    articulo = input('Ingrese la descripcion o codigo del articulo : ')
+    bandera = False
+    with open('Recepcion/Productos/productos.txt', 'r', encoding='utf-8', errors='ignore') as file:
+      for linea in file:
+        campos = linea.strip().split(",")
+        if articulo.lower() in campos[1].lower() or articulo == campos[0]:
+          print()
+          articulo = campos[1]
+          print(f'Codigo : {campos[0]}')
+          print(f'Articulo : {campos[1]}')
+          print(f'Precio : Q {campos[4]}')
+          print(f'Stock : {campos[3]} Unidades')
+          precio = float(campos[4])
+          bandera = True
+          break
+
+    if not bandera:
+      self.Vender(numero_caja)
+      return
+
+    cantidad = int(input('Cantidad de productos : '))
     subtotal = cantidad * precio
     
+    print()
     print('------- VOUCHER -------')
-    print('Producto:', descripcion_producto_or_codigo_producto)
-    print('Cantidad:', cantidad)
-    print('Precio:', precio)
-    print('Subtotal:', subtotal)
-    pass
+    print('Articulo : Q', articulo)
+    print('Cantidad : ', cantidad)
+    print('Precio : Q', precio)
+    print('Total : Q ', subtotal)
 
+caja1 = Caja()
+caja1.Vender('Caja 1')
 
 class cancelar_venta :
   pass

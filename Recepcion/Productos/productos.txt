@@ -1,116 +1,171 @@
-01,Pintura vinilica blanca,02,40,10.50
-02,Pintura acrilica azul,02,100,11.00
-03,Pintura esmalte rojo,02,100,12.00
-04,Barniz mate,02,100,13.00
-05,Sellador acrilico,02,100,14.00
-06,Thinner universal,02,100,15.00
-07,Masilla para pared,02,100,16.00
-08,Pintura epoxica gris,02,100,17.00
-09,Cuadro moderno,03,100,18.00
-10,Espejo rectangular,03,100,19.00
-11,Alfombra pequena,03,100,20.00
-12,Cojin decorativo,03,100,21.00
-13,Cortina de tela,03,100,22.00
-14,Lampara de mesa,03,100,23.00
-15,Velas aromaticas,03,100,24.00
-16,Jarron ceramico,03,100,25.00
-17,Mueble de jardin,04,100,26.00
-18,Sombrilla grande,04,100,27.00
-19,Parrilla portatil,04,100,28.00
-20,Maceta grande,04,100,29.00
-21,Fuente decorativa,04,100,30.00
-22,Cesped artificial 1x1,04,100,31.00
-23,Iluminacion exterior LED,04,100,32.00
-24,Toldos retractiles,04,100,33.00
-25,Detergente en polvo 1kg,05,100,34.00
-26,Detergente liquido 500ml,05,100,35.00
-27,Jabon liquido manos,05,100,36.00
-28,Cloro 1L,05,100,37.00
-29,Desinfectante multiusos,05,100,38.00
-30,Limpiavidrios 500ml,05,100,39.00
-31,Trapeador,05,100,40.00
-32,Escoba de cerdas,05,100,41.00
-33,Planta ornamental pequena,06,100,42.00
-34,Arbol frutal joven,06,100,43.00
-35,Semillas de flores,06,100,44.00
-36,Fertilizante organico 1kg,06,100,45.00
-37,Tierra abonada 5kg,06,100,46.00
-38,Maceta plastica mediana,06,100,47.00
-39,Pulverizador manual,06,100,48.00
-40,Herramienta de jardineria,06,100,49.00
-41,Sofa 3 plazas,07,100,50.00
-42,Sillon individual,07,100,51.00
-43,Mesa de centro,07,100,52.00
-44,Mesa comedor 4 sillas,07,100,53.00
-45,Cama matrimonial,07,100,54.00
-46,Colchon individual,07,100,55.00
-47,Escritorio oficina,07,100,56.00
-48,Estanteria metalica,07,100,57.00
-49,Aceite de motor 1L,08,100,58.00
-50,Anticongelante 1L,08,100,59.00
-51,Liquido de frenos 500ml,08,100,60.00
-52,Bateria automotriz,08,100,61.00
-53,Filtro de aceite,08,100,62.00
-54,Bujias estandar,08,100,63.00
-55,Balatas de freno,08,100,64.00
-56,Limpiaparabrisas,08,100,65.00
-49,Aceite de motor 1L,08,100,66.00
-50,Anticongelante 1L,08,100,67.00
-51,Liquido de frenos 500ml,08,100,68.00
-52,Bateria automotriz,08,100,69.00
-53,Filtro de aceite,08,100,70.00
-54,Bujias estandar,08,100,71.00
-55,Balatas de freno,08,100,72.00
-56,Limpiaparabrisas,08,100,73.00
-57,Archivador metalico,09,100,74.00
-58,Caja organizadora plastica,09,100,75.00
-59,Estante de madera,09,100,76.00
-60,Organizador de escritorio,09,100,77.00
-61,Perchero de pie,09,100,78.00
-62,Cajonera pequena,09,100,79.00
-63,Portadocumentos,09,100,80.00
-64,Bandeja de almacenamiento,09,100,81.00
-65,Lampara de techo LED,10,100,82.00
-66,Lampara de mesa moderna,10,100,83.00
-67,Lampara de pie,10,100,84.00
-68,Aplique de pared,10,100,85.00
-69,Foco halogeno,10,100,86.00
-70,Lampara solar exterior,10,100,87.00
-71,Lampara decorativa,10,100,88.00
-72,Lampara de noche,10,100,89.00
-73,Pintura acrilica verde,01,100,90.00
-74,Pintura esmalte negro,01,100,91.00
-75,Barniz brillante,01,100,92.00
-76,Masilla plastica,01,100,93.00
-77,Cuadro abstracto,02,100,94.00
-78,Espejo redondo,02,100,95.00
-79,Alfombra mediana,02,100,96.00
-80,Cortina blackout,02,100,97.00
-81,Mueble de patio,03,100,98.00
-82,Sombrilla pequena,03,100,99.00
-83,Parrilla fija,03,100,100.00
-84,Maceta colgante,03,100,101.00
-85,Detergente en pastillas,04,100,102.00
-86,Limpiador de pisos,04,100,103.00
-87,Jabon antibacterial,04,100,104.00
-88,Cloro concentrado,04,100,105.00
-89,Planta decorativa grande,05,100,106.00
-90,Arbol frutal mediano,05,100,107.00
-91,Semillas vegetales,05,100,108.00
-92,Fertilizante liquido,05,100,109.00
-93,Sillon reclinable,06,100,110.00
-94,Mesa auxiliar,06,100,111.00
-95,Cama individual,06,100,112.00
-96,Estanteria pequena,06,100,113.00
-97,Aceite para motor 5W30,07,100,114.00
-98,Filtro de aire,07,100,115.00
-99,Limpiaparabrisas delantero,07,100,116.00
-100,Bujia premium,07,100,117.00
-101,Archivador de metal,08,100,118.00
-102,Caja organizadora grande,08,100,119.00
-103,Estante modular,08,100,120.00
-104,Organizador de cajones,08,100,121.00
-105,Lampara de escritorio LED,09,100,122.00
-106,Lampara de noche pequena,09,100,123.00
-107,Lampara de pie decorativa,09,100,124.00
-108,Aplique de pared moderno,09,100,125.00
+001,Cemento Nacional,01,200,150
+002,Cemento Quetzal,01,200,175
+003,Cemento Estructural,01,200,185
+004,Cemento Progreso,01,200,195
+005,Cemento Tolteca,01,200,165
+006,Plywood 1/8" 4x8',06,200,51
+007,Plywood 1/4" 4x8',06,200,52
+008,Plywood 3/8" 4x8',06,200,53
+009,Plywood 1/2" 4x8',06,200,54
+010,Plywood 5/8" 4x8',06,200,55
+011,Plywood 3/4" 4x8',06,200,56
+012,Plywood 1" 4x8',06,200,57
+013,Melamina Blanca 4x8',06,200,58
+014,Melamina Negra 4x8',06,200,59
+015,Melamina Wengue 4x8',06,200,60
+016,Melamina Maple 4x8',06,200,61
+017,Melamina Nogal 4x8',06,200,62
+018,Osb 1/8" 4x8',06,200,63
+019,Osb 1/4" 4x8',06,200,64
+020,Osb 3/8" 4x8',06,200,65
+021,Osb 1/2" 4x8',06,200,66
+022,Osb 5/8" 4x8',06,200,67
+023,Osb 3/4" 4x8',06,200,68
+024,Osb 1" 4x8',06,200,69
+025,Aglomerado 1/8" 4x8',06,200,70
+026,Aglomerado 1/4" 4x8',06,200,71
+027,Aglomerado 3/8" 4x8',06,200,72
+028,Aglomerado 1/2" 4x8',06,200,73
+029,Aglomerado 5/8" 4x8',06,200,74
+030,Aglomerado 3/4" 4x8',06,200,75
+031,Aglomerado 1" 4x8',06,200,76
+032,Panel Pino 3/4" 4x8',06,200,77
+033,Panel Pino 1" 4x8',06,200,78
+034,Mármol Carrara 60x20,07,200,79
+035,Granito Gris 45x45,07,200,80
+036,Pizarra Negra 30x60,07,200,81
+037,Gris vintage 80x80,07,200,82
+038,Roble Blanco Decapado 60x60,07,200,83
+039,Arce Blanco 40x40,07,200,84
+040,Ceniza Urbana 90x90,07,200,85
+041,Roble Natural 60x120,08,200,86
+042,Cerezo Americano 30x90,08,200,87
+043,Teca Tropical 60x60,08,200,88
+044,Haya Gris 45x45,08,200,89
+045,Imitación madera: Roble 80x80,09,200,90
+046,Imitación madera: Nogal 60x60,09,200,91
+047,Imitación madera: Cerezo 40x40,09,200,92
+048,Imitación piedra: Mármol 90x90,09,200,93
+049,Imitación piedra: Granito 60x120,09,200,94
+050,Imitación piedra: Pizarra 30x90,09,200,95
+051,Imitación piedra: Travertino 45x45,09,200,96
+052,Pulido Marmol Carrara 60x60 cm,10,200,97
+053,Mate Roble Natural 30x60 cm,10,200,98
+054,Texturizado Nogal Clasico 45x45 cm,10,200,99
+055,Brillante Cemento Pulido 60x60 cm,10,200,100
+056,Satinado Granito Gris 80x80 cm,10,200,101
+057,Pulido Teca Tropical 30x90 cm,10,200,102
+058,Mate Cerezo Americano 20x40 cm,10,200,103
+059,Texturizado Haya Gris 40x80 cm,10,200,104
+060,Brillante Pizarra Negra 60x120 cm,10,200,105
+061,Satinado Roble Blanco Decapado 90x90 cm,10,200,106
+062,Pulido Marmol Beige 60x60 cm,10,200,107
+063,Mate Pino Rustico 30x60 cm,10,200,108
+064,Texturizado Arce Blanco 45x45 cm,10,200,109
+065,Brillante Cemento Urbano 60x60 cm,10,200,110
+066,Satinado Travertino Beige 80x80 cm,10,200,111
+067,Marmol Carrara 60x60 cm,11,200,112
+068,Granito Gris 80x80 cm,11,200,113
+069,Pizarra Negra 45x45 cm,11,200,114
+070,Travertino Beige 60x60 cm,11,200,115
+071,Laja Rustica 40x40 cm,11,200,116
+072,Marmol Blanco 60x60 cm,11,200,117
+073,Granito Negro 80x80 cm,11,200,118
+074,Piedra Rustica Gris 45x45 cm,11,200,119
+075,Marmol Crema 60x60 cm,11,200,120
+076,Pizarra Gris Oscuro 40x40 cm,11,200,121
+077,Travertino Claro 80x80 cm,11,200,122
+078,Piedra Natural Beige 60x60 cm,11,200,123
+079,Marmol Verde 45x45 cm,11,200,124
+080,Granito Rojo 60x60 cm,11,200,125
+081,Pizarra Rustica Negra 40x40 cm,11,200,126
+082,Concreto Pulido 60x60 cm,12,200,127
+083,Concreto Liso 80x80 cm,12,200,128
+084,Concreto Estampado 45x45 cm,12,200,129
+085,Concreto Texturizado 60x60 cm,12,200,130
+086,Concreto Rustico 40x40 cm,12,200,131
+087,Concreto Gris Claro 60x60 cm,12,200,132
+088,Concreto Gris Oscuro 80x80 cm,12,200,133
+089,Concreto Pulido Decorativo 45x45 cm,12,200,134
+090,Concreto Cepillado 60x60 cm,12,200,135
+091,Concreto Impreso 40x40 cm,12,200,136
+092,Concreto Satinado 80x80 cm,12,200,137
+093,Concreto Gris Natural 60x60 cm,12,200,138
+094,Concreto Cemento 45x45 cm,12,200,139
+095,Concreto Urbano 60x60 cm,12,200,140
+096,Concreto Textura Arena 40x40 cm,12,200,141
+097,Deck de Madera 60x60 cm,13,200,142
+098,Deck Composite 80x80 cm,13,200,143
+099,Piedra Rustica 45x45 cm,13,200,144
+100,Adoquin Gris 60x60 cm,13,200,145
+101,Adoquin Rojo 40x40 cm,13,200,146
+102,Laja Exterior 60x60 cm,13,200,147
+103,Piedra Natural Beige 80x80 cm,13,200,148
+104,Piedra Rustica Gris 45x45 cm,13,200,149
+105,Porcelanato Exterior 60x60 cm,13,200,150
+106,Porcelanato Antideslizante 40x40 cm,13,200,151
+107,Concreto Exterior 80x80 cm,13,200,152
+108,Concreto Texturizado 60x60 cm,13,200,153
+109,Deck Madera Teak 45x45 cm,13,200,154
+110,Piedra Negra Exterior 60x60 cm,13,200,155
+111,Adoquin Gris Claro 40x40 cm,13,200,156
+112,Puerta Metal Sencilla 80x200 cm,02,200,1200
+113,Puerta Metal Con Ventana 90x210 cm,02,200,1500
+114,Puerta Metal Reforzada 100x210 cm,02,200,1800
+115,Puerta Metal Industrial 120x220 cm,02,200,2500
+116,Puerta Metal Exterior 90x200 cm,02,200,1600
+117,Puerta Metal Cortafuego 100x210 cm,02,200,2200
+118,Puerta Metal Seguridad 110x210 cm,02,200,2000
+119,Puerta Metal Laminada 80x200 cm,02,200,1400
+120,Puerta Metal Doble 160x210 cm,02,200,3000
+121,Puerta Metal Corredera 120x200 cm,02,200,2800
+122,Puerta Metal Con Reja 90x200 cm,02,200,1700
+123,Puerta Metal Simple 70x200 cm,02,200,1100
+124,Puerta Metal Con Panel 100x210 cm,02,200,1900
+125,Puerta Metal Exterior Reforzada 110x220 cm,02,200,2600
+126,Puerta Metal Ventilada 90x210 cm,02,200,1600
+127,Puerta Madera Sencilla 80x200 cm,03,200,1300
+128,Puerta Madera Con Ventana 90x210 cm,03,200,1600
+129,Puerta Madera Reforzada 100x210 cm,03,200,1900
+130,Puerta Madera Interior 80x200 cm,03,200,1200
+131,Puerta Madera Exterior 90x200 cm,03,200,1700
+132,Puerta Madera Laminada 80x200 cm,03,200,1400
+133,Puerta Madera Doble 160x210 cm,03,200,3000
+134,Puerta Madera Corredera 120x200 cm,03,200,2800
+135,Puerta Madera Con Panel 100x210 cm,03,200,1800
+136,Puerta Madera Ventilada 90x210 cm,03,200,1500
+137,Puerta Madera Maciza 100x210 cm,03,200,2200
+138,Puerta Madera Interior Laminada 80x200 cm,03,200,1300
+139,Puerta Madera Exterior Reforzada 110x220 cm,03,200,2600
+140,Puerta Madera Con Reja 90x200 cm,03,200,1700
+141,Puerta Madera Decorativa 80x200 cm,03,200,1500
+142,Puerta Prefabricada Sencilla 80x200 cm,04,200,1200
+143,Puerta Prefabricada Con Ventana 90x210 cm,04,200,1500
+144,Puerta Prefabricada Reforzada 100x210 cm,04,200,1800
+145,Puerta Prefabricada Interior 80x200 cm,04,200,1100
+146,Puerta Prefabricada Exterior 90x200 cm,04,200,1600
+147,Puerta Prefabricada Laminada 80x200 cm,04,200,1400
+148,Puerta Prefabricada Doble 160x210 cm,04,200,3000
+149,Puerta Prefabricada Corredera 120x200 cm,04,200,2800
+150,Puerta Prefabricada Con Panel 100x210 cm,04,200,1700
+151,Puerta Prefabricada Ventilada 90x210 cm,04,200,1500
+152,Puerta Prefabricada Maciza 100x210 cm,04,200,2200
+153,Puerta Prefabricada Interior Laminada 80x200 cm,04,200,1300
+154,Puerta Prefabricada Exterior Reforzada 110x220 cm,04,200,2600
+155,Puerta Prefabricada Con Reja 90x200 cm,04,200,1700
+156,Puerta Prefabricada Decorativa 80x200 cm,04,200,1500
+157,Puerta Melamina Sencilla 80x200 cm,05,200,1200
+158,Puerta Melamina Con Ventana 90x210 cm,05,200,1500
+159,Puerta Melamina Reforzada 100x210 cm,05,200,1800
+160,Puerta Melamina Interior 80x200 cm,05,200,1100
+161,Puerta Melamina Exterior 90x200 cm,05,200,1600
+162,Puerta Melamina Laminada 80x200 cm,05,200,1400
+163,Puerta Melamina Doble 160x210 cm,05,200,3000
+164,Puerta Melamina Corredera 120x200 cm,05,200,2800
+165,Puerta Melamina Con Panel 100x210 cm,05,200,1700
+166,Puerta Melamina Ventilada 90x210 cm,05,200,1500
+167,Puerta Melamina Maciza 100x210 cm,05,200,2200
+168,Puerta Melamina Interior Laminada 80x200 cm,05,200,1300
+169,Puerta Melamina Exterior Reforzada 110x220 cm,05,200,2600
+170,Puerta Melamina Con Reja 90x200 cm,05,200,1700
+171,Puerta Melamina Decorativa 80x200 cm,05,200,1500

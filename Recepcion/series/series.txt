@@ -1,0 +1,13 @@
+01,Cementos,01
+02,Metal,02
+03,Medera,02
+04,Prefabricadas,02
+05,Melamina,02
+06,Tablones,03
+07,Pisos Laminados,04
+08,Pisos Vinilicos,04
+09,Pisos Ceramicos,04
+10,Pisos Porcelanatos,04
+11,Pisos Piedra,04
+12,Pisos de Concreto,04
+13,Pisos de Exteriores,04
