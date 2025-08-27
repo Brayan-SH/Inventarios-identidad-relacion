@@ -1,0 +1,1 @@
+> Id, Nombre Serie, Id_Categoria

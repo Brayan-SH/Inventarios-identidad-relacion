@@ -1,9 +1,4 @@
-02,Pinturas
-03,Decoracion
-04,Exteriores
-05,Limpieza
-06,Vivero
-07,Muebles
-08,Automotriz
-09,Organizacion
-10,Lamparas
+01,Morteros
+02,Puertas
+03,Maderas
+04,Pisos

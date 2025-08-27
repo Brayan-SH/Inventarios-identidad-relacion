@@ -1,10 +1,6 @@
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','..','.')))
-# from asesor1 import Menu_Asesor
 
-
-class asesor :
-  pass
 
 class consultar_codigo_producto :
   
@@ -14,7 +10,7 @@ class consultar_codigo_producto :
       id_producto = input('Ingrese el ID del producto (o n para salir) : ')
       
       if id_producto.lower() == 'n':
-        print('→ Gracias por usar el sistema. Saliendo...')
+        salir.salir_sistema()
         break
       
       bandera = False
@@ -22,9 +18,9 @@ class consultar_codigo_producto :
           for linea in file:
               campos = linea.strip().split(",")
               if id_producto == campos[0]:
-                  print('► Encontrado...')
+                  print('\t► Encontrado...')
                   print(f'Codigo : {campos[0]}')
-                  print(f'Nombre : {campos[1]}')
+                  print(f'Articulo : {campos[1]}')
                   print(f'Precio : Q {campos[4]}')
                   print(f'Stock : {campos[3]}')
                   bandera = True
@@ -40,7 +36,7 @@ class consultar_descripcion_producto :
       descripcion_producto = input('Ingrese la descripcion del producto (o n para salir) : ')
 
       if descripcion_producto.lower() == 'n':
-        print('→ Gracias por usar el sistema. Saliendo...')
+        salir.salir_sistema()
         break
 
       bandera = False
@@ -48,12 +44,13 @@ class consultar_descripcion_producto :
           for linea in file:
               campos = linea.strip().split(",")
               if descripcion_producto.lower() in campos[1].lower():
-                  print('► Encontrado...')
+                  print('\t► Encontrado...')
                   print(f'Codigo : {campos[0]}')
-                  print(f'Nombre : {campos[1]}')
+                  print(f'Articulo : {campos[1]}')
                   print(f'Precio : Q {campos[4]}')
                   print(f'Stock : {campos[3]}')
                   bandera = True
+                  print()
       if not bandera:
         print('► No encontrado.')
 
@@ -62,39 +59,62 @@ class consultar_por_categoria :
   
   def consultar_categoria() :
     while True:
-      print('\n\t----- Consulta por categoria del Producto -----\n')
-      categoria_producto = input('Ingrese la categoria del producto (o n para salir) : ')
-
-      if categoria_producto.lower() == 'n':
-        print('→ Gracias por usar el sistema. Saliendo...')
-        break
-
+      # IMPRIMIR LAS CATEGORIAS.txt
+      print()
       bandera = False
-      # Archivo productos.txt
-      with open('Recepcion/Productos/productos.txt', 'r', encoding='utf-8', errors='ignore') as file:
-          for linea in file:
-              campos = linea.strip().split(",")
-              
-              if categoria_producto.lower() in campos[2].lower():
-                  print('► Encontrado...')
-                  print(f'Codigo : {campos[0]}')
-                  print(f'Nombre : {campos[1]}')
+      with open('Recepcion/Categorias/categorias.txt', 'r', encoding='utf-8', errors='ignore') as file:
+        print('CODIGO \t\tCATEGORIA')
+        for linea in file:
+          campos = linea.strip().split(",")
+          print(f'{campos[0]} \t\t{campos[1]}')
+          bandera = True
 
-                  # Archivo categorias.txt
-                  with open('Recepcion/Categorias/categorias.txt', 'r', encoding='utf-8', errors='ignore') as categorias:
-                    for categoria in categorias:
-                      categoria_auxiliar = categoria.strip().split(",")
-                      if categoria_auxiliar[0] == campos[2]:
-                        print(f'Categoria : {categoria_auxiliar[1]}')
-                      
-                  print(f'Precio : Q {campos[4]}')
-                  print(f'Stock : {campos[3]}')
-                  bandera = True
-                  print()
-                  
+      categoria_producto = input('\n> Ingrese la categoria (o n para salir) : ') # PREGUNTAR LA CATEGORIA
+      if categoria_producto.lower() == 'n':
+        salir.salir_sistema()
+        break
+      
+      # Imprimir las series.txt
+      with open('Recepcion/Series/series.txt', 'r', encoding='utf-8', errors='ignore') as file:
+        print('\nCODIGO \t\tSERIE')
+        for linea in file:
+          campos = linea.strip().split(",")
+          if categoria_producto == campos[2]:
+            print(f'{campos[0]} \t\t{campos[1]}')
+            bandera = True
+
       if not bandera:
         print('► No encontrado.')
 
+      # Ingresar la serie
+      serie_producto = input('\n> Ingrese la serie (o n para salir) : ') # PREGUNTAR LA SERIE
+      if serie_producto.lower() == 'n':
+        salir.salir_sistema()
+        break
+
+      # Imprimir los productos que coinciden con la categoria y serie
+      bandera = False
+      with open('Recepcion/Productos/productos.txt', 'r', encoding='utf-8', errors='ignore') as file:
+        print('\nCODIGO \t\tARTICULO')
+        for linea in file:
+          campos = linea.strip().split(",")
+          if serie_producto == campos[2] :
+            print(f'{campos[0]} \t\t{campos[1]}')
+            bandera = True
+
+      if not bandera:
+        print('► No encontrado.')
+      
+      print()
+      pregunta = input('¿Desea realizar otra consulta? (si/no): ').strip().lower()
+      if pregunta == 'si':
+        os.system('cls' if os.name == 'nt' else 'clear')
+        continue
+      elif pregunta == 'no':
+        salir.salir_sistema()
+        break
+      else:
+        consultar_por_categoria.consultar_categoria()
 
 class consultar_stocks_bajos :
 
@@ -104,14 +124,14 @@ class consultar_stocks_bajos :
       stock_bajo = input('Ingrese el stock bajo (o n para salir) : ')
 
       if stock_bajo.lower() == 'n':
-        # Menu_Asesor()
+        salir.salir_sistema()
         break
 
       bandera = False
       with open('Recepcion/Productos/productos.txt', 'r', encoding='utf-8', errors='ignore') as file:
           for linea in file:
               campos = linea.strip().split(",")
-              if int(campos[3]) <= int(stock_bajo):
+              if int(stock_bajo) <= int(campos[3]):
                   print('► Encontrado...')
                   print(f'Codigo : {campos[0]}')
                   print(f'Nombre : {campos[1]}')
@@ -127,5 +147,8 @@ class consultar_stocks_bajos :
 class salir :
 
   def salir_sistema():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    from asesor1 import Menu_Asesor    
+    Menu_Asesor()
     pass
     # Menu_Asesor()
