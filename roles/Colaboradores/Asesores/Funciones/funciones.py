@@ -18,14 +18,14 @@ class consultar_codigo_producto :
           for linea in file:
               campos = linea.strip().split(",")
               if id_producto == campos[0]:
-                  print('\t► Encontrado...')
+                  print('\n\t► Encontrado...')
                   print(f'Codigo : {campos[0]}')
                   print(f'Articulo : {campos[1]}')
                   print(f'Precio : Q {campos[4]}')
                   print(f'Stock : {campos[3]}')
                   bandera = True
       if not bandera:
-        print('► No encontrado.')
+        print('\n► No encontrado.')
 
 
 class consultar_descripcion_producto :
@@ -44,7 +44,7 @@ class consultar_descripcion_producto :
           for linea in file:
               campos = linea.strip().split(",")
               if descripcion_producto.lower() in campos[1].lower():
-                  print('\t► Encontrado...')
+                  print('\n\t► Encontrado...')
                   print(f'Codigo : {campos[0]}')
                   print(f'Articulo : {campos[1]}')
                   print(f'Precio : Q {campos[4]}')
@@ -52,7 +52,7 @@ class consultar_descripcion_producto :
                   bandera = True
                   print()
       if not bandera:
-        print('► No encontrado.')
+        print('\n► No encontrado.')
 
 
 class consultar_por_categoria :
@@ -84,7 +84,7 @@ class consultar_por_categoria :
             bandera = True
 
       if not bandera:
-        print('► No encontrado.')
+        print('\n► No encontrado.')
 
       # Ingresar la serie
       serie_producto = input('\n> Ingrese la serie (o n para salir) : ') # PREGUNTAR LA SERIE
@@ -103,7 +103,7 @@ class consultar_por_categoria :
             bandera = True
 
       if not bandera:
-        print('► No encontrado.')
+        print('\n► No encontrado.')
       
       print()
       pregunta = input('¿Desea realizar otra consulta? (si/no): ').strip().lower()
@@ -131,8 +131,8 @@ class consultar_stocks_bajos :
       with open('Recepcion/Productos/productos.txt', 'r', encoding='utf-8', errors='ignore') as file:
           for linea in file:
               campos = linea.strip().split(",")
-              if int(stock_bajo) <= int(campos[3]):
-                  print('► Encontrado...')
+              if int(campos[3]) <= int(stock_bajo):
+                  print('\n► Encontrado...')
                   print(f'Codigo : {campos[0]}')
                   print(f'Nombre : {campos[1]}')
                   print(f'Precio : Q {campos[4]}')
@@ -141,7 +141,7 @@ class consultar_stocks_bajos :
                   print()
                   
       if not bandera:
-        print('► No encontrado.')
+        print('\n► No encontrado.')
 
 
 class salir :
@@ -151,4 +151,3 @@ class salir :
     from asesor1 import Menu_Asesor    
     Menu_Asesor()
     pass
-    # Menu_Asesor()

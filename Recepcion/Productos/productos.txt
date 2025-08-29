@@ -1,8 +1,8 @@
-001,Cemento Nacional,01,200,150
-002,Cemento Quetzal,01,200,175
-003,Cemento Estructural,01,200,185
-004,Cemento Progreso,01,200,195
-005,Cemento Tolteca,01,200,165
+001,Cemento Nacional,01,49,150
+002,Cemento Quetzal,01,45,175
+003,Cemento Estructural,01,195,185
+004,Cemento Progreso,01,195,195
+005,Cemento Tolteca,01,195,165
 006,Plywood 1/8" 4x8',06,200,51
 007,Plywood 1/4" 4x8',06,200,52
 008,Plywood 3/8" 4x8',06,200,53
