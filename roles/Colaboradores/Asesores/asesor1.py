@@ -23,7 +23,7 @@ def Menu_Asesor():
     case '5':
       print('Saliendo...')
     case _:
-      print('>>>>>>>>>> OPCION NO VALIDA')
+      os.system('cls' if os.name == 'nt' else 'clear')
       Menu_Asesor()
 
 
