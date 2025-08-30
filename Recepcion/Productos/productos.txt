@@ -1,171 +1,171 @@
-001,Cemento Nacional,01,49,150
-002,Cemento Quetzal,01,45,175
-003,Cemento Estructural,01,195,185
-004,Cemento Progreso,01,195,195
-005,Cemento Tolteca,01,195,165
-006,Plywood 1/8" 4x8',06,200,51
-007,Plywood 1/4" 4x8',06,200,52
-008,Plywood 3/8" 4x8',06,200,53
-009,Plywood 1/2" 4x8',06,200,54
-010,Plywood 5/8" 4x8',06,200,55
-011,Plywood 3/4" 4x8',06,200,56
-012,Plywood 1" 4x8',06,200,57
-013,Melamina Blanca 4x8',06,200,58
-014,Melamina Negra 4x8',06,200,59
-015,Melamina Wengue 4x8',06,200,60
-016,Melamina Maple 4x8',06,200,61
-017,Melamina Nogal 4x8',06,200,62
-018,Osb 1/8" 4x8',06,200,63
-019,Osb 1/4" 4x8',06,200,64
-020,Osb 3/8" 4x8',06,200,65
-021,Osb 1/2" 4x8',06,200,66
-022,Osb 5/8" 4x8',06,200,67
-023,Osb 3/4" 4x8',06,200,68
-024,Osb 1" 4x8',06,200,69
-025,Aglomerado 1/8" 4x8',06,200,70
-026,Aglomerado 1/4" 4x8',06,200,71
-027,Aglomerado 3/8" 4x8',06,200,72
-028,Aglomerado 1/2" 4x8',06,200,73
-029,Aglomerado 5/8" 4x8',06,200,74
-030,Aglomerado 3/4" 4x8',06,200,75
-031,Aglomerado 1" 4x8',06,200,76
-032,Panel Pino 3/4" 4x8',06,200,77
-033,Panel Pino 1" 4x8',06,200,78
-034,Mármol Carrara 60x20,07,200,79
-035,Granito Gris 45x45,07,200,80
-036,Pizarra Negra 30x60,07,200,81
-037,Gris vintage 80x80,07,200,82
-038,Roble Blanco Decapado 60x60,07,200,83
-039,Arce Blanco 40x40,07,200,84
-040,Ceniza Urbana 90x90,07,200,85
-041,Roble Natural 60x120,08,200,86
-042,Cerezo Americano 30x90,08,200,87
-043,Teca Tropical 60x60,08,200,88
-044,Haya Gris 45x45,08,200,89
-045,Imitación madera: Roble 80x80,09,200,90
-046,Imitación madera: Nogal 60x60,09,200,91
-047,Imitación madera: Cerezo 40x40,09,200,92
-048,Imitación piedra: Mármol 90x90,09,200,93
-049,Imitación piedra: Granito 60x120,09,200,94
-050,Imitación piedra: Pizarra 30x90,09,200,95
-051,Imitación piedra: Travertino 45x45,09,200,96
-052,Pulido Marmol Carrara 60x60 cm,10,200,97
-053,Mate Roble Natural 30x60 cm,10,200,98
-054,Texturizado Nogal Clasico 45x45 cm,10,200,99
-055,Brillante Cemento Pulido 60x60 cm,10,200,100
-056,Satinado Granito Gris 80x80 cm,10,200,101
-057,Pulido Teca Tropical 30x90 cm,10,200,102
-058,Mate Cerezo Americano 20x40 cm,10,200,103
-059,Texturizado Haya Gris 40x80 cm,10,200,104
-060,Brillante Pizarra Negra 60x120 cm,10,200,105
-061,Satinado Roble Blanco Decapado 90x90 cm,10,200,106
-062,Pulido Marmol Beige 60x60 cm,10,200,107
-063,Mate Pino Rustico 30x60 cm,10,200,108
-064,Texturizado Arce Blanco 45x45 cm,10,200,109
-065,Brillante Cemento Urbano 60x60 cm,10,200,110
-066,Satinado Travertino Beige 80x80 cm,10,200,111
-067,Marmol Carrara 60x60 cm,11,200,112
-068,Granito Gris 80x80 cm,11,200,113
-069,Pizarra Negra 45x45 cm,11,200,114
-070,Travertino Beige 60x60 cm,11,200,115
-071,Laja Rustica 40x40 cm,11,200,116
-072,Marmol Blanco 60x60 cm,11,200,117
-073,Granito Negro 80x80 cm,11,200,118
-074,Piedra Rustica Gris 45x45 cm,11,200,119
-075,Marmol Crema 60x60 cm,11,200,120
-076,Pizarra Gris Oscuro 40x40 cm,11,200,121
-077,Travertino Claro 80x80 cm,11,200,122
-078,Piedra Natural Beige 60x60 cm,11,200,123
-079,Marmol Verde 45x45 cm,11,200,124
-080,Granito Rojo 60x60 cm,11,200,125
-081,Pizarra Rustica Negra 40x40 cm,11,200,126
-082,Concreto Pulido 60x60 cm,12,200,127
-083,Concreto Liso 80x80 cm,12,200,128
-084,Concreto Estampado 45x45 cm,12,200,129
-085,Concreto Texturizado 60x60 cm,12,200,130
-086,Concreto Rustico 40x40 cm,12,200,131
-087,Concreto Gris Claro 60x60 cm,12,200,132
-088,Concreto Gris Oscuro 80x80 cm,12,200,133
-089,Concreto Pulido Decorativo 45x45 cm,12,200,134
-090,Concreto Cepillado 60x60 cm,12,200,135
-091,Concreto Impreso 40x40 cm,12,200,136
-092,Concreto Satinado 80x80 cm,12,200,137
-093,Concreto Gris Natural 60x60 cm,12,200,138
-094,Concreto Cemento 45x45 cm,12,200,139
-095,Concreto Urbano 60x60 cm,12,200,140
-096,Concreto Textura Arena 40x40 cm,12,200,141
-097,Deck de Madera 60x60 cm,13,200,142
-098,Deck Composite 80x80 cm,13,200,143
-099,Piedra Rustica 45x45 cm,13,200,144
-100,Adoquin Gris 60x60 cm,13,200,145
-101,Adoquin Rojo 40x40 cm,13,200,146
-102,Laja Exterior 60x60 cm,13,200,147
-103,Piedra Natural Beige 80x80 cm,13,200,148
-104,Piedra Rustica Gris 45x45 cm,13,200,149
-105,Porcelanato Exterior 60x60 cm,13,200,150
-106,Porcelanato Antideslizante 40x40 cm,13,200,151
-107,Concreto Exterior 80x80 cm,13,200,152
-108,Concreto Texturizado 60x60 cm,13,200,153
-109,Deck Madera Teak 45x45 cm,13,200,154
-110,Piedra Negra Exterior 60x60 cm,13,200,155
-111,Adoquin Gris Claro 40x40 cm,13,200,156
-112,Puerta Metal Sencilla 80x200 cm,02,200,1200
-113,Puerta Metal Con Ventana 90x210 cm,02,200,1500
-114,Puerta Metal Reforzada 100x210 cm,02,200,1800
-115,Puerta Metal Industrial 120x220 cm,02,200,2500
-116,Puerta Metal Exterior 90x200 cm,02,200,1600
-117,Puerta Metal Cortafuego 100x210 cm,02,200,2200
-118,Puerta Metal Seguridad 110x210 cm,02,200,2000
-119,Puerta Metal Laminada 80x200 cm,02,200,1400
-120,Puerta Metal Doble 160x210 cm,02,200,3000
-121,Puerta Metal Corredera 120x200 cm,02,200,2800
-122,Puerta Metal Con Reja 90x200 cm,02,200,1700
-123,Puerta Metal Simple 70x200 cm,02,200,1100
-124,Puerta Metal Con Panel 100x210 cm,02,200,1900
-125,Puerta Metal Exterior Reforzada 110x220 cm,02,200,2600
-126,Puerta Metal Ventilada 90x210 cm,02,200,1600
-127,Puerta Madera Sencilla 80x200 cm,03,200,1300
-128,Puerta Madera Con Ventana 90x210 cm,03,200,1600
-129,Puerta Madera Reforzada 100x210 cm,03,200,1900
-130,Puerta Madera Interior 80x200 cm,03,200,1200
-131,Puerta Madera Exterior 90x200 cm,03,200,1700
-132,Puerta Madera Laminada 80x200 cm,03,200,1400
-133,Puerta Madera Doble 160x210 cm,03,200,3000
-134,Puerta Madera Corredera 120x200 cm,03,200,2800
-135,Puerta Madera Con Panel 100x210 cm,03,200,1800
-136,Puerta Madera Ventilada 90x210 cm,03,200,1500
-137,Puerta Madera Maciza 100x210 cm,03,200,2200
-138,Puerta Madera Interior Laminada 80x200 cm,03,200,1300
-139,Puerta Madera Exterior Reforzada 110x220 cm,03,200,2600
-140,Puerta Madera Con Reja 90x200 cm,03,200,1700
-141,Puerta Madera Decorativa 80x200 cm,03,200,1500
-142,Puerta Prefabricada Sencilla 80x200 cm,04,200,1200
-143,Puerta Prefabricada Con Ventana 90x210 cm,04,200,1500
-144,Puerta Prefabricada Reforzada 100x210 cm,04,200,1800
-145,Puerta Prefabricada Interior 80x200 cm,04,200,1100
-146,Puerta Prefabricada Exterior 90x200 cm,04,200,1600
-147,Puerta Prefabricada Laminada 80x200 cm,04,200,1400
-148,Puerta Prefabricada Doble 160x210 cm,04,200,3000
-149,Puerta Prefabricada Corredera 120x200 cm,04,200,2800
-150,Puerta Prefabricada Con Panel 100x210 cm,04,200,1700
-151,Puerta Prefabricada Ventilada 90x210 cm,04,200,1500
-152,Puerta Prefabricada Maciza 100x210 cm,04,200,2200
-153,Puerta Prefabricada Interior Laminada 80x200 cm,04,200,1300
-154,Puerta Prefabricada Exterior Reforzada 110x220 cm,04,200,2600
-155,Puerta Prefabricada Con Reja 90x200 cm,04,200,1700
-156,Puerta Prefabricada Decorativa 80x200 cm,04,200,1500
-157,Puerta Melamina Sencilla 80x200 cm,05,200,1200
-158,Puerta Melamina Con Ventana 90x210 cm,05,200,1500
-159,Puerta Melamina Reforzada 100x210 cm,05,200,1800
-160,Puerta Melamina Interior 80x200 cm,05,200,1100
-161,Puerta Melamina Exterior 90x200 cm,05,200,1600
-162,Puerta Melamina Laminada 80x200 cm,05,200,1400
-163,Puerta Melamina Doble 160x210 cm,05,200,3000
-164,Puerta Melamina Corredera 120x200 cm,05,200,2800
-165,Puerta Melamina Con Panel 100x210 cm,05,200,1700
-166,Puerta Melamina Ventilada 90x210 cm,05,200,1500
-167,Puerta Melamina Maciza 100x210 cm,05,200,2200
-168,Puerta Melamina Interior Laminada 80x200 cm,05,200,1300
-169,Puerta Melamina Exterior Reforzada 110x220 cm,05,200,2600
-170,Puerta Melamina Con Reja 90x200 cm,05,200,1700
-171,Puerta Melamina Decorativa 80x200 cm,05,200,1500
+001,Cemento Nacional,01,199,150,0,0
+002,Cemento Quetzal,01,200,0,250,0
+003,Cemento Estructural,01,198,0,0,170
+004,Cemento Progreso,01,200,195,0,0
+005,Cemento Tolteca,01,200,165,0,0
+006,Plywood 1/8" 4x8',06,200,51,0,0
+007,Plywood 1/4" 4x8',06,200,52,0,0
+008,Plywood 3/8" 4x8',06,200,53,0,0
+009,Plywood 1/2" 4x8',06,200,54,0,0
+010,Plywood 5/8" 4x8',06,200,55,0,0
+011,Plywood 3/4" 4x8',06,200,56,0,0
+012,Plywood 1" 4x8',06,200,57,0,0
+013,Melamina Blanca 4x8',06,200,58,0,0
+014,Melamina Negra 4x8',06,200,59,0,0
+015,Melamina Wengue 4x8',06,200,60,0,0
+016,Melamina Maple 4x8',06,200,61,0,0
+017,Melamina Nogal 4x8',06,200,62,0,0
+018,Osb 1/8" 4x8',06,200,63,0,0
+019,Osb 1/4" 4x8',06,200,64,0,0
+020,Osb 3/8" 4x8',06,200,65,0,0
+021,Osb 1/2" 4x8',06,200,66,0,0
+022,Osb 5/8" 4x8',06,200,67,0,0
+023,Osb 3/4" 4x8',06,200,68,0,0
+024,Osb 1" 4x8',06,200,69,0,0
+025,Aglomerado 1/8" 4x8',06,200,70,0,0
+026,Aglomerado 1/4" 4x8',06,200,71,0,0
+027,Aglomerado 3/8" 4x8',06,200,72,0,0
+028,Aglomerado 1/2" 4x8',06,200,73,0,0
+029,Aglomerado 5/8" 4x8',06,200,74,0,0
+030,Aglomerado 3/4" 4x8',06,200,75,0,0
+031,Aglomerado 1" 4x8',06,200,76,0,0
+032,Panel Pino 3/4" 4x8',06,200,77,0,0
+033,Panel Pino 1" 4x8',06,200,78,0,0
+034,Mármol Carrara 60x20,07,200,79,0,0
+035,Granito Gris 45x45,07,200,80,0,0
+036,Pizarra Negra 30x60,07,200,81,0,0
+037,Gris vintage 80x80,07,200,82,0,0
+038,Roble Blanco Decapado 60x60,07,200,83,0,0
+039,Arce Blanco 40x40,07,200,84,0,0
+040,Ceniza Urbana 90x90,07,200,85,0,0
+041,Roble Natural 60x120,08,200,86,0,0
+042,Cerezo Americano 30x90,08,200,87,0,0
+043,Teca Tropical 60x60,08,200,88,0,0
+044,Haya Gris 45x45,08,200,89,0,0
+045,Imitación madera: Roble 80x80,09,200,90,0,0
+046,Imitación madera: Nogal 60x60,09,200,91,0,0
+047,Imitación madera: Cerezo 40x40,09,200,92,0,0
+048,Imitación piedra: Mármol 90x90,09,200,93,0,0
+049,Imitación piedra: Granito 60x120,09,200,94,0,0
+050,Imitación piedra: Pizarra 30x90,09,200,95,0,0
+051,Imitación piedra: Travertino 45x45,09,200,96,0,0
+052,Pulido Marmol Carrara 60x60 cm,10,200,97,0,0
+053,Mate Roble Natural 30x60 cm,10,200,98,0,0
+054,Texturizado Nogal Clasico 45x45 cm,10,200,99,0,0
+055,Brillante Cemento Pulido 60x60 cm,10,200,100,0,0
+056,Satinado Granito Gris 80x80 cm,10,200,101,0,0
+057,Pulido Teca Tropical 30x90 cm,10,200,102,0,0
+058,Mate Cerezo Americano 20x40 cm,10,200,103,0,0
+059,Texturizado Haya Gris 40x80 cm,10,200,104,0,0
+060,Brillante Pizarra Negra 60x120 cm,10,200,105,0,0
+061,Satinado Roble Blanco Decapado 90x90 cm,10,200,106,0,0
+062,Pulido Marmol Beige 60x60 cm,10,200,107,0,0
+063,Mate Pino Rustico 30x60 cm,10,200,108,0,0
+064,Texturizado Arce Blanco 45x45 cm,10,200,109,0,0
+065,Brillante Cemento Urbano 60x60 cm,10,200,110,0,0
+066,Satinado Travertino Beige 80x80 cm,10,200,111,0,0
+067,Marmol Carrara 60x60 cm,11,200,112,0,0
+068,Granito Gris 80x80 cm,11,200,113,0,0
+069,Pizarra Negra 45x45 cm,11,200,114,0,0
+070,Travertino Beige 60x60 cm,11,200,115,0,0
+071,Laja Rustica 40x40 cm,11,200,116,0,0
+072,Marmol Blanco 60x60 cm,11,200,117,0,0
+073,Granito Negro 80x80 cm,11,200,118,0,0
+074,Piedra Rustica Gris 45x45 cm,11,200,119,0,0
+075,Marmol Crema 60x60 cm,11,200,120,0,0
+076,Pizarra Gris Oscuro 40x40 cm,11,200,121,0,0
+077,Travertino Claro 80x80 cm,11,200,122,0,0
+078,Piedra Natural Beige 60x60 cm,11,200,123,0,0
+079,Marmol Verde 45x45 cm,11,200,124,0,0
+080,Granito Rojo 60x60 cm,11,200,125,0,0
+081,Pizarra Rustica Negra 40x40 cm,11,200,126,0,0
+082,Concreto Pulido 60x60 cm,12,200,127,0,0
+083,Concreto Liso 80x80 cm,12,200,128,0,0
+084,Concreto Estampado 45x45 cm,12,200,129,0,0
+085,Concreto Texturizado 60x60 cm,12,200,130,0,0
+086,Concreto Rustico 40x40 cm,12,200,131,0,0
+087,Concreto Gris Claro 60x60 cm,12,200,132,0,0
+088,Concreto Gris Oscuro 80x80 cm,12,200,133,0,0
+089,Concreto Pulido Decorativo 45x45 cm,12,200,134,0,0
+090,Concreto Cepillado 60x60 cm,12,200,135,0,0
+091,Concreto Impreso 40x40 cm,12,200,136,0,0
+092,Concreto Satinado 80x80 cm,12,200,137,0,0
+093,Concreto Gris Natural 60x60 cm,12,200,138,0,0
+094,Concreto Cemento 45x45 cm,12,200,139,0,0
+095,Concreto Urbano 60x60 cm,12,200,140,0,0
+096,Concreto Textura Arena 40x40 cm,12,200,141,0,0
+097,Deck de Madera 60x60 cm,13,200,142,0,0
+098,Deck Composite 80x80 cm,13,200,143,0,0
+099,Piedra Rustica 45x45 cm,13,200,144,0,0
+100,Adoquin Gris 60x60 cm,13,200,145,0,0
+101,Adoquin Rojo 40x40 cm,13,200,146,0,0
+102,Laja Exterior 60x60 cm,13,200,147,0,0
+103,Piedra Natural Beige 80x80 cm,13,200,148,0,0
+104,Piedra Rustica Gris 45x45 cm,13,200,149,0,0
+105,Porcelanato Exterior 60x60 cm,13,200,150,0,0
+106,Porcelanato Antideslizante 40x40 cm,13,200,151,0,0
+107,Concreto Exterior 80x80 cm,13,200,152,0,0
+108,Concreto Texturizado 60x60 cm,13,200,153,0,0
+109,Deck Madera Teak 45x45 cm,13,200,154,0,0
+110,Piedra Negra Exterior 60x60 cm,13,200,155,0,0
+111,Adoquin Gris Claro 40x40 cm,13,200,156,0,0
+112,Puerta Metal Sencilla 80x200 cm,02,200,1200,0,0
+113,Puerta Metal Con Ventana 90x210 cm,02,200,1500,0,0
+114,Puerta Metal Reforzada 100x210 cm,02,200,1800,0,0
+115,Puerta Metal Industrial 120x220 cm,02,200,2500,0,0
+116,Puerta Metal Exterior 90x200 cm,02,200,1600,0,0
+117,Puerta Metal Cortafuego 100x210 cm,02,200,2200,0,0
+118,Puerta Metal Seguridad 110x210 cm,02,200,2000,0,0
+119,Puerta Metal Laminada 80x200 cm,02,200,1400,0,0
+120,Puerta Metal Doble 160x210 cm,02,200,3000,0,0
+121,Puerta Metal Corredera 120x200 cm,02,200,2800,0,0
+122,Puerta Metal Con Reja 90x200 cm,02,200,1700,0,0
+123,Puerta Metal Simple 70x200 cm,02,200,1100,0,0
+124,Puerta Metal Con Panel 100x210 cm,02,200,1900,0,0
+125,Puerta Metal Exterior Reforzada 110x220 cm,02,200,2600,0,0
+126,Puerta Metal Ventilada 90x210 cm,02,200,1600,0,0
+127,Puerta Madera Sencilla 80x200 cm,03,200,1300,0,0
+128,Puerta Madera Con Ventana 90x210 cm,03,200,1600,0,0
+129,Puerta Madera Reforzada 100x210 cm,03,200,1900,0,0
+130,Puerta Madera Interior 80x200 cm,03,200,1200,0,0
+131,Puerta Madera Exterior 90x200 cm,03,200,1700,0,0
+132,Puerta Madera Laminada 80x200 cm,03,200,1400,0,0
+133,Puerta Madera Doble 160x210 cm,03,200,3000,0,0
+134,Puerta Madera Corredera 120x200 cm,03,200,2800,0,0
+135,Puerta Madera Con Panel 100x210 cm,03,200,1800,0,0
+136,Puerta Madera Ventilada 90x210 cm,03,200,1500,0,0
+137,Puerta Madera Maciza 100x210 cm,03,200,2200,0,0
+138,Puerta Madera Interior Laminada 80x200 cm,03,200,1300,0,0
+139,Puerta Madera Exterior Reforzada 110x220 cm,03,200,2600,0,0
+140,Puerta Madera Con Reja 90x200 cm,03,200,1700,0,0
+141,Puerta Madera Decorativa 80x200 cm,03,200,1500,0,0
+142,Puerta Prefabricada Sencilla 80x200 cm,04,200,1200,0,0
+143,Puerta Prefabricada Con Ventana 90x210 cm,04,200,1500,0,0
+144,Puerta Prefabricada Reforzada 100x210 cm,04,200,1800,0,0
+145,Puerta Prefabricada Interior 80x200 cm,04,200,1100,0,0
+146,Puerta Prefabricada Exterior 90x200 cm,04,200,1600,0,0
+147,Puerta Prefabricada Laminada 80x200 cm,04,200,1400,0,0
+148,Puerta Prefabricada Doble 160x210 cm,04,200,3000,0,0
+149,Puerta Prefabricada Corredera 120x200 cm,04,200,2800,0,0
+150,Puerta Prefabricada Con Panel 100x210 cm,04,200,1700,0,0
+151,Puerta Prefabricada Ventilada 90x210 cm,04,200,1500,0,0
+152,Puerta Prefabricada Maciza 100x210 cm,04,200,2200,0,0
+153,Puerta Prefabricada Interior Laminada 80x200 cm,04,200,1300,0,0
+154,Puerta Prefabricada Exterior Reforzada 110x220 cm,04,200,2600,0,0
+155,Puerta Prefabricada Con Reja 90x200 cm,04,200,1700,0,0
+156,Puerta Prefabricada Decorativa 80x200 cm,04,200,1500,0,0
+157,Puerta Melamina Sencilla 80x200 cm,05,200,1200,0,0
+158,Puerta Melamina Con Ventana 90x210 cm,05,200,1500,0,0
+159,Puerta Melamina Reforzada 100x210 cm,05,200,1800,0,0
+160,Puerta Melamina Interior 80x200 cm,05,200,1100,0,0
+161,Puerta Melamina Exterior 90x200 cm,05,200,1600,0,0
+162,Puerta Melamina Laminada 80x200 cm,05,200,1400,0,0
+163,Puerta Melamina Doble 160x210 cm,05,200,3000,0,0
+164,Puerta Melamina Corredera 120x200 cm,05,200,2800,0,0
+165,Puerta Melamina Con Panel 100x210 cm,05,200,1700,0,0
+166,Puerta Melamina Ventilada 90x210 cm,05,200,1500,0,0
+167,Puerta Melamina Maciza 100x210 cm,05,200,2200,0,0
+168,Puerta Melamina Interior Laminada 80x200 cm,05,200,1300,0,0
+169,Puerta Melamina Exterior Reforzada 110x220 cm,05,200,2600,0,0
+170,Puerta Melamina Con Reja 90x200 cm,05,200,1700,0,0
+171,Puerta Melamina Decorativa 80x200 cm,05,200,1500,0,0

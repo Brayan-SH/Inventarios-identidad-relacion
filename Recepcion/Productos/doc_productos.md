@@ -1,0 +1,1 @@
+> Id[0], Articulo[1], Id_Linea[2], Stock[3], Precio de Venta en Q[4], Precio de Oferta en Q[5], Precio de Liquidacion en Q[6]

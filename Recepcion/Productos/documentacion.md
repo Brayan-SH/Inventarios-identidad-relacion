@@ -1,1 +1,0 @@
-> Id, Nombre Serie, Id_Linea, Stock, Precio de Venta en Q

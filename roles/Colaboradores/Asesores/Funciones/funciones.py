@@ -95,11 +95,11 @@ class consultar_por_categoria :
       # Imprimir los productos que coinciden con la categoria y serie
       bandera = False
       with open('Recepcion/Productos/productos.txt', 'r', encoding='utf-8', errors='ignore') as file:
-        print('\nCODIGO \t\tARTICULO')
+        print('\nCODIGO \t\tARTICULO \t\t\t\tSTOCK \t\t\tPRECIO')
         for linea in file:
           campos = linea.strip().split(",")
           if serie_producto == campos[2] :
-            print(f'{campos[0]} \t\t{campos[1]}')
+            print(f'{campos[0]} \t\t{campos[1]} \t\t{campos[3]} \t\t\t{campos[4]}')
             bandera = True
 
       if not bandera:
