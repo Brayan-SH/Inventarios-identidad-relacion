@@ -1,0 +1,1 @@
+> Id[0], Nombre o Nit[1], Correo Electrónico[2], Teléfono[3], Fecha de Registro[4], Estado[5], Forma de Pago Preferida[6], Código de Descuento[7]

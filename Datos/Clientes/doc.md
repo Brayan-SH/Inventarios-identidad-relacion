@@ -1,1 +1,0 @@
-> Id, Nombre, Nit, Correo Electrónico, Teléfono, Fecha de Registro, Estado, Tipo de Cliente, Forma de Pago Preferida

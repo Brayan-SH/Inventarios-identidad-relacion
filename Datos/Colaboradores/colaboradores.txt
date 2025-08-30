@@ -1,6 +1,6 @@
-1,Ana Martinez,Colaborador,Asesor,12345678,ana@email.com
-2,Pedro Sánchez,Colaborador,Cajero,12345678,pedro@@email.com
-3,Luis Gómez,Administrador,General,12345678,luis@email.com
-4,Carla Rodríguez,Gerente,Auditor,12345678,carla@email.com
-5,Sofía Ramírez,Administrador,Auxiliar,12345678,sofia@email.com
-6,Javier Torres,Administrador,Auxiliar,12345678,javier@email.com
+COL1,Ana Martinez,Colaborador,Asesor,12345678,ana@email.com,3
+COL2,Pedro Sánchez,Colaborador,Cajero,12345678,pedro@@email.com,3
+COL3,Luis Gómez,Administrador,General,12345678,luis@email.com,3
+COL4,Carla Rodríguez,Gerente,Auditor,12345678,carla@email.com,3
+COL5,Sofía Ramírez,Administrador,Auxiliar,12345678,sofia@email.com,3
+COL6,Javier Torres,Administrador,Auxiliar,12345678,javier@email.com,3

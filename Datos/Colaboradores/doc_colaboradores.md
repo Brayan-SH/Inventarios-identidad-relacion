@@ -1,4 +1,4 @@
-> id, nombre, edad, cargo o puesto colaborador, area o funcion asesor
+> Id de colaborador[0], Nombre completo[1], Cargo o puesto[2], Área o función[3], Teléfono[4], Correo electrónico[5],Código de descuento[6]
 
 - **id**: Identificador único del colaborador  
 - **nombre**: Nombre completo  
