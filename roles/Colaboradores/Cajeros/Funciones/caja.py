@@ -1,6 +1,7 @@
 from datetime import datetime 
 import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','..','.')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../..')))
+from Datos.Facturas.Descuentos.descuentos import Descuentos
 
 class MetodosCajero :
   
@@ -10,7 +11,7 @@ class MetodosCajero :
     print(f'------- VENDER  -------')
 
     print()
-    articulo = input('Ingrese la descripcion o codigo del articulo (o n para salir) : ')
+    articulo = input('Ingrese la [descripcion] o [codigo] del articulo (o n para salir) : ')
     if articulo.lower() == 'n' or articulo == '':
       MetodosCajero.Volver_a_Caja_principal()
       return
@@ -20,13 +21,25 @@ class MetodosCajero :
       for linea in file:
         campos = linea.strip().split(",")
         if articulo.lower() in campos[1].lower() or articulo == campos[0]:
+          
           print()
+          idProducto = campos[0]
           articulo = campos[1]
-          print(f'Codigo : {campos[0]}')
-          print(f'Articulo : {articulo}')
-          print(f'Precio : Q {campos[4]}')
-          print(f'Stock : {campos[3]} Unidades')
           precio = float(campos[4])
+          if precio > 0 : # Si es precio normal.
+            precio = float(campos[4])
+            tipo_precio = 'precio normal'
+          elif float(campos[5]) > 0 : # Si es precio de oferta.
+            precio = float(campos[5])
+            tipo_precio = 'precio de oferta'
+          else : # Si es precio de liquidacion.
+            precio = float(campos[6])
+            tipo_precio = 'precio de liquidacion'
+          print(f'Codigo : {idProducto}')
+          print(f'Articulo : {articulo}')
+          print(f'Precio : Q {precio}')
+          print(f'Stock : {campos[3]} Unidades')
+          producto = [idProducto, articulo]
           bandera = True
           break
 
@@ -35,20 +48,40 @@ class MetodosCajero :
       MetodosCajero.Volver_a_Caja()
       return
     
+    print()
+    match tipo_precio :
+      case 'precio normal':
+        print('►  PRECIO NORMAL.')
+      case 'precio de oferta':
+        print(f'►  PRECIO DE OFERTA, SIN DESCUENTO.')
+      case 'precio de liquidacion':
+        print(f'►  PRECIO DE LIQUIDACIÓN, SIN DESCUENTO.')
+
     cantidad = input('Cantidad de productos (o n para salir) : ')
-    if cantidad == 'n' or cantidad == '':
-      MetodosCajero.Volver_a_Caja_principal()
     
-    subtotal = int(cantidad) * precio
+    if int(cantidad) > 0 :
+      subtotal = int(cantidad) * precio
+    descuento = 1
+    producto.extend([cantidad, precio, subtotal])
     
     print()
-    # Generar voucher
-    MetodosCajero.Generar_voucher(articulo, cantidad, precio, subtotal)
+    # Generar factura
+    factura = {
+      'numero' : MetodosCajero.Generar_numero_factura(),
+      'caja' : numero_caja,
+    }
+    # MetodosCajero.Facturar(articulo, cantidad, precio, subtotal)
     # Actualiza el stock
     MetodosCajero.Actualizar_Stock(articulo, int(cantidad))
     print('\nFacturado correctamente')
+    # Generar voucher
+    MetodosCajero.Generar_voucher(articulo, cantidad, precio, subtotal)
     input('Presiona [Enter] para continuar...')
     MetodosCajero.Volver_a_Caja()
+      
+      
+    if cantidad == 'n' or cantidad == '':
+      MetodosCajero.Volver_a_Caja_principal()
 
 
   def Consultar_categoria_producto() :
@@ -165,7 +198,7 @@ class MetodosCajero :
 
   def Historial_de_ventas():
     print('\n\t----- Historial de Ventas -----\n')
-    with open('Recepcion/Ventas/historial.txt', 'r', encoding='utf-8', errors='ignore') as file:
+    with open('Datos/Facturas/facturas_de_ventas.txt', 'r', encoding='utf-8', errors='ignore') as file:
       for linea in file:
         print(linea.strip())
     print()    
@@ -179,6 +212,15 @@ class MetodosCajero :
   def Volver_a_Caja_principal() :
     MetodosCajero.Limpiar()
     Caja_principal()
+
+
+  def Generar_numero_factura():
+      """Genera un número de factura único basado en la fecha y hora actual."""
+      return datetime.now().strftime("F%Y%m%d%H%M%S")
+
+
+  def Generar_descuento () :
+    pass
 
 
   def fecha_actual():
@@ -205,8 +247,24 @@ class MetodosCajero :
     print('Total : Q ', subtotal)
 
 
+  def Actualizar_stock(articulo, cantidad):
+      pass
+
+
+  def Facturar(factura, cliente, productos, pago) :
+    
+    with open('Datos/Facturas/facturas_de_ventas.txt', 'a', encoding='utf-8', errors='ignore') as file:
+        for producto in productos:
+            file.write(f"{factura['numero_factura']},{factura['caja']},{cliente['nit']},{cliente['nombre']},{producto['id']},{producto['articulo']},{producto['cantidad']},{producto['precio']},{producto['subtotal']},{producto['descuentos']},{producto['total']},{pago['forma_pago']},{pago['estado']}, {pago['fecha_venta']},{pago['hora_venta']}\n")
+
+
+  def Determinar_tipo_descuento(codigo_descuento):
+      return Descuentos.get(codigo_descuento, {'tipo': 'Sin Descuento', 'porcentaje': 0})
+
+
   def Cancelar_venta() :
     pass
+
 
   def Salir_sistema():
     sys.exit()
