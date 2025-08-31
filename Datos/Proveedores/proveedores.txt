@@ -1,9 +1,0 @@
-Código o ID del proveedor
-Nombre o razón social
-Dirección
-Teléfono
-Correo electrónico
-Nombre de contacto
-Tipo de productos que suministra
-Estado (activo/inactivo)
-RFC/NIT/CIF (según país)

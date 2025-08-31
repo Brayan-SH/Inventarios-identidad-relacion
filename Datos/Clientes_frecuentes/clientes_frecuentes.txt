@@ -1,0 +1,10 @@
+ClFte1,900001001,Juan Pérez,juan.perez@email.com,5551234,2025-01-10,activo,transferencia,2,15,2025-08-30,5000
+ClFte2,900001002,Ana Gómez,ana.gomez@email.com,5555678,2025-02-15,activo,efectivo,2,12,2025-08-28,4200
+ClFte3,900001003,Carlos Ruiz,carlos.ruiz@email.com,5558765,2025-03-20,activo,tarjeta,2,20,2025-08-25,8000
+ClFte4,900001004,Sofía Martínez,sofia.martinez@email.com,5554321,2025-04-05,activo,transferencia,2,18,2025-08-27,6700
+ClFte5,900001005,Pedro Sánchez,pedro.sanchez@email.com,5556789,2025-05-12,activo,efectivo,2,10,2025-08-29,3900
+ClFte6,900001006,Laura Torres,laura.torres@email.com,5553456,2025-06-18,activo,tarjeta,2,22,2025-08-26,7500
+ClFte7,900001007,Diego Ramírez,diego.ramirez@email.com,5552345,2025-07-22,activo,transferencia,2,17,2025-08-24,6100
+ClFte8,900001008,María López,maria.lopez@email.com,5559876,2025-08-30,activo,efectivo,2,19,2025-08-23,6900
+ClFte9,900001009,José Castillo,jose.castillo@email.com,5558765,2025-09-14,activo,tarjeta,2,14,2025-08-22,5400
+ClFte10,900001010,Paula Herrera,paula.herrera@email.com,5557654,2025-10-01,activo,transferencia,2,16,2025-08-21,5800
