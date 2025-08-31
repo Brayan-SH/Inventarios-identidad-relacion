@@ -1,4 +1,4 @@
-001,Cemento Nacional,01,199,150,0,0
+001,Cemento Nacional,01,192,150,0,0
 002,Cemento Quetzal,01,200,0,250,0
 003,Cemento Estructural,01,198,0,0,170
 004,Cemento Progreso,01,200,195,0,0
