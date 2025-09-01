@@ -11,7 +11,7 @@ class MetodosCajero :
     print(f'------- VENDER  -------')
 
     print()
-    articulo = input('INGRESE LA [descripcion] O [codigo] DEL ARTICULO (o n para salir) : ')
+    articulo = input('→ INGRESE LA [descripcion] O [codigo] DEL ARTICULO (o n para salir) : ')
     if articulo.lower() == 'n' or articulo == '':
       MetodosCajero.Volver_a_Caja_principal()
       return
@@ -30,41 +30,39 @@ class MetodosCajero :
           print(f'Articulo : {articulo}')
           
           precio = float(campos[4])
-          tipo_precio = MetodosCajero.Verificar_precio(precio, campos) # Verifica y muestra precio (normal, oferta, liquidacion)
+          tipo_precio, precio = MetodosCajero.Verificar_precio(precio, campos) # Verifica y muestra precio (normal, oferta, liquidacion)
           
           stocks = campos[3]
           print(f'Stock : {stocks} Unidades')
-          producto = [idProducto, articulo]
           
           bandera = True
           break
 
-    # Si no se encontró el artículo
+    # Si no encontró el artículo
     if not bandera or articulo == '' :
-      input('► No se encontró el artículo. Presiona [Enter] para volver a intentar.')
+      input('>>>>> No se encontró el artículo. Presiona [Enter] para volver a intentar. <<<<<')
       MetodosCajero.Volver_a_Caja()
       return
     
+    # Preguntar por descuento de [Averiado / Dañado]
+    # O por Cotizacion
     print()
-    cantidad = input('CANTIDAD DE PRODUCTOS (o n para salir) : ')
+    precio = MetodosCajero.Descuento_manual(precio)    
 
-    # Si la cantidad no es un número entero
-    if not cantidad.isdigit() :
-      print('► Cantidad inválida. Debe ser un número entero.')
-      MetodosCajero.Limpiar()
-      MetodosCajero.Volver_a_Caja()
-
-    # Si la cantidad es 'n' o vacía
-    if cantidad == 'n' or cantidad == '' :
-        MetodosCajero.Limpiar()
-        MetodosCajero.Volver_a_Caja_principal()
-
+    print()
+    cantidad = input('→ CANTIDAD DE PRODUCTOS (o n para salir) : ')
+    cantidad = MetodosCajero.Verificar_cantidad(cantidad)
+    
     # Cantidad verificada
     if int(cantidad) > 0 :
       
       # Verificar stocks
-      # if stocks > 0 :
-      #   pass
+      if int(cantidad) > int(stocks) :
+        print(f'>>>>> Stock insuficiente. Solo quedan {stocks} unidades. <<<<<')
+        input('Presiona [Enter] para continuar...')
+        MetodosCajero.Volver_a_Caja()
+        return
+      
       subtotal = int(cantidad) * precio
       print(f'\U0001F4B0 Subtotal : Q {subtotal}')
 
@@ -76,35 +74,57 @@ class MetodosCajero :
         case '1' :
           nit = input('1. NIT DEL CLIENTE : ')
         case '2' :
-          nombre = input('2. NOMBRE DEL CLIENTE : ')
+          nit = input('2. NOMBRE DEL CLIENTE : ')
         case '3' :
-          cf = 'C/F'
+          nit = 'C/F'
           
       descuento = False if tipo_precio in ['precio de oferta', 'precio de liquidacion'] else True
 
+      # Se le puede dar descuento
       if descuento :
-        precio_con_descuento = MetodosCajero.Generar_descuento(nit, precio)
+        precio_con_descuento, nombre, precio = MetodosCajero.Generar_descuento(nit, precio)
+        print(f'Cliente : {nombre}')
       
-      elif False :
-        # Si no tiene descuento : Buscar el precio o Obtener el precio
-        pass
-
-      print()
-      producto.extend([cantidad, precio, subtotal])
+      else :
+        nombre = MetodosCajero.Buscar_colaborador_o_empleado(nit)
+        precio_con_descuento = precio_con_descuento if descuento else precio
+      
       # Generar factura
       factura = {
-        'numero' : MetodosCajero.Generar_numero_factura(),
+        'numero_factura' : MetodosCajero.Generar_numero_factura(),
         'caja' : numero_caja,
+        'subtotal' : subtotal,
+        'descuentos' : descuento,
+        'total' : subtotal - (subtotal * descuento) if descuento else subtotal,
+        'forma_pago' : 'Efectivo',
+        'estado' : 'Activo',
+        'fecha_venta' : MetodosCajero.fecha_actual(),
+        'hora_venta' : MetodosCajero.hora_actual(),
       }
-      # MetodosCajero.Facturar(articulo, cantidad, precio, subtotal)
+      cliente = {
+        'nit' : nit,
+        'nombre' : nombre,
+      }
+      productos = {
+        'id' : idProducto,
+        'articulo' : articulo,
+        'cantidad' : cantidad,
+        'precio' : precio_con_descuento,
+      }
+      
+      print()
+      MetodosCajero.Facturar(factura, cliente, productos)
+      
       # Actualiza el stock
       MetodosCajero.Actualizar_stock(articulo, int(cantidad))
-      print('\nFacturado correctamente')
+      
       # Generar voucher
-      # subtotal = int(cantidad) * precio_con_descuento if descuento else subtotal
       subtotal = int(cantidad) * precio_con_descuento if descuento else subtotal
-      MetodosCajero.Generar_voucher(articulo, cantidad, precio_con_descuento, subtotal)
+      MetodosCajero.Generar_voucher(articulo, cantidad, precio_con_descuento, subtotal, tipo_precio)
+
       input('Presiona [Enter] para continuar...')
+      
+      # Retornar a la caja
       MetodosCajero.Volver_a_Caja()
 
 
@@ -121,7 +141,7 @@ class MetodosCajero :
           print(f'{campos[0]} \t\t{campos[1]}')
           bandera = True
 
-      categoria_producto = input('\n> Ingrese la categoria (o n para salir) : ') # PREGUNTAR LA CATEGORIA
+      categoria_producto = input('\n→ Ingrese la categoria (o n para salir) : ') # PREGUNTAR LA CATEGORIA
       if categoria_producto.lower() == 'n' or categoria_producto == '':
         MetodosCajero.Volver_a_Caja_principal()
         break
@@ -139,7 +159,7 @@ class MetodosCajero :
         print('► No encontrado.')
 
       # Ingresar la serie
-      serie_producto = input('\n> Ingrese la serie (o n para salir) : ') # PREGUNTAR LA SERIE
+      serie_producto = input('\n→ Ingrese la serie (o n para salir) : ') # PREGUNTAR LA SERIE
       if serie_producto.lower() == 'n' or serie_producto == '':
         MetodosCajero.Volver_a_Caja_principal()
         break
@@ -188,6 +208,8 @@ class MetodosCajero :
                     print(f'Articulo : {campos[1]}')
                     print(f'Precio : Q {campos[4]}')
                     print(f'Stock : {campos[3]}')
+                    input('Presione [Enter] para continuar...')
+                    MetodosCajero.Volver_a_Caja()
                     bandera = True
         if not bandera:
           input('► No encontrado presione [Enter] para continuar...')
@@ -252,6 +274,7 @@ class MetodosCajero :
           campos_colaborador = linea_colaborador.strip().split(",")
           
           if nit == campos_colaborador[7] : # Preguntar por el nit de colaborador
+            nombre = campos_colaborador[1]
             with open('Datos/Facturas/Descuentos/descuentos.txt', 'r', encoding='utf-8', errors='ignore') as file_descuentos:
               for linea_descuento in file_descuentos:
                   campos_descuentos = linea_descuento.strip().split(",")
@@ -265,6 +288,7 @@ class MetodosCajero :
         for linea_clientes_frecuentes in file_clientes_frecuentes :
           campos_clientes_frecuentes = linea_clientes_frecuentes.strip().split(",")
           if nit == campos_clientes_frecuentes[1] : # Preguntar por el nit de cliente frecuente
+            nombre = campos_clientes_frecuentes[2]
             with open('Datos/Facturas/Descuentos/descuentos.txt', 'r', encoding='utf-8', errors='ignore') as file_descuentos:
               for linea_descuento in file_descuentos:
                 campos_descuentos = linea_descuento.strip().split(",")
@@ -273,20 +297,28 @@ class MetodosCajero :
                   bandera = True
 
     if bandera == False :
+      nombre = nit
       precio_con_descuento = precio
-      return precio_con_descuento
+      return precio_con_descuento, nombre, precio
     
-    return precio_con_descuento
+    return precio_con_descuento, nombre, precio
+
 
   def fecha_actual():
-      return datetime.now().strftime("%d/%m/%Y")
+      # 14:23:45
+      return datetime.now().strftime("%d/%m/%Y").strip()
+
+
+  def hora_actual():
+    """Devuelve la hora actual en formato HH:MM:SS."""
+    return datetime.now().strftime("%H:%M:%S")
 
 
   def Limpiar() :
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-  def Generar_voucher(articulo, cantidad, precio, subtotal) :
+  def Generar_voucher(articulo, cantidad, precio, subtotal, tipo_precio) :
     # Ticket de Venta
     # Fecha: 25/08/2025
     # --------------------------
@@ -295,10 +327,11 @@ class MetodosCajero :
     # Leche        1          15.00    15.00
     # --------------------------
     # TOTAL: 35.00
+    print('Facturado correctamente...\n')
     print('------- VOUCHER -------')
     print('Articulo : ', articulo)
     print('Cantidad : ', cantidad)
-    print(f'► Precio con descuento : Q {precio}')
+    print(f'►{tipo_precio.upper()} : Q {precio}')
     print('Total : Q ', subtotal)
 
 
@@ -326,22 +359,17 @@ class MetodosCajero :
       print("\n► No se pudo actualizar el stock: producto no encontrado.")
 
 
-  def Facturar(factura, cliente, productos, pago) :
+  def Facturar(factura, cliente, productos) :
     
     with open('Datos/Facturas/facturas_de_ventas.txt', 'a', encoding='utf-8', errors='ignore') as file:
-        for producto in productos:
-            file.write(f"{factura['numero_factura']},{factura['caja']},{cliente['nit']},{cliente['nombre']},{producto['id']},{producto['articulo']},{producto['cantidad']},{producto['precio']},{producto['subtotal']},{producto['descuentos']},{producto['total']},{pago['forma_pago']},{pago['estado']}, {pago['fecha_venta']},{pago['hora_venta']}\n")
-
-
-  def Determinar_tipo_descuento(codigo_descuento):
-      return Descuentos.get(codigo_descuento, {'tipo': 'Sin Descuento', 'porcentaje': 0})
+      file.write(f"{factura['numero_factura']},{factura['caja']},{cliente['nit']},{cliente['nombre']},{productos['id']},{productos['articulo']},{productos['cantidad']},{productos['precio']},{factura['subtotal']},{factura['descuentos']},{factura['total']},{factura['forma_pago']},{factura['estado']},{factura['fecha_venta']},{factura['hora_venta']}\n")
 
 
   def Cancelar_venta() :
     pass
 
 
-  def Verificar_precio(precio, campos) :
+  def Verificar_precio(precio, campos) :    
     match precio :
       case _ if precio > 0 :
         print(f'Precio : Q {precio} ► PRECIO NORMAL.') # Si es precio normal.
@@ -354,12 +382,87 @@ class MetodosCajero :
         precio = float(campos[6])
         print(f'Precio : Q {precio} ► PRECIO DE LIQUIDACIÓN, SIN DESCUENTO.') # Si es precio de liquidación.
         tipo_precio = 'precio de liquidacion'
-    return tipo_precio
+    return tipo_precio, precio
+
+
+  def Buscar_colaborador_o_empleado (nit) :
+      
+      # Si encuentra el nit de [colaborador] descuento
+      bandera = False
+      with open('Datos/Colaboradores/colaboradores.txt', 'r', encoding='utf-8', errors='ignore') as file_colaborador:
+        for linea_colaborador in file_colaborador:
+            campos_colaborador = linea_colaborador.strip().split(",")
+            if nit == campos_colaborador[7] : # Preguntar por el nit de colaborador
+              nombre = campos_colaborador[1]
+              bandera = True
+
+      # Si no se encuentra el nit de colaborador que busque en clientes frecuentes
+      if bandera == False :
+        with open('Datos/Clientes_frecuentes/clientes_frecuentes.txt', 'r', encoding='utf-8', errors='ignore') as file_clientes_frecuentes:
+          for linea_clientes_frecuentes in file_clientes_frecuentes :
+            campos_clientes_frecuentes = linea_clientes_frecuentes.strip().split(",")
+            if nit == campos_clientes_frecuentes[1] : # Preguntar por el nit de cliente frecuente
+              nombre = campos_clientes_frecuentes[2]
+              bandera = True
+
+      if bandera == False :
+        return nit
+      
+      return nombre
 
 
   def Salir_sistema():
     sys.exit()
 
+
+  def Descuento_manual(precio):
+    print('► AGREGAR DESCUENTO MANUALMENTE :')
+    print('1. Averiado / Dañado')
+    print('2. Cotizacion')
+    print('0. Ninguno')
+    tipo_descuento = input('→ Opcion : ')
+    match tipo_descuento:
+        case '1':
+            porcentaje_descuento_manual = float(input('→ Ingrese el (0% a 100%) de descuento : '))
+            if 0 <= porcentaje_descuento_manual <= 100:
+                precio = precio - (precio * porcentaje_descuento_manual / 100)
+                print(f'\U0001F449 NUEVO PRECIO CON DESCUENTO DE Q {porcentaje_descuento_manual}% : Q {precio}')
+            else:
+                print('>>>>> Porcentaje inválido. <<<<<')
+                input('Presiona [Enter] para continuar...')
+                MetodosCajero.Volver_a_Caja()
+                return None
+        case '2':
+            cotizacion = float(input('→ INGRESE EL PRECIO COTIZADO : Q '))
+            if cotizacion > 0 and cotizacion < precio:
+                precio = cotizacion
+                print(f'\U0001F449 NUEVO PRECIO COTIZADO : Q {precio}')
+            else:
+                print('>>>>> Precio inválido. <<<<<')
+                input('Presiona [Enter] para continuar...')
+                MetodosCajero.Volver_a_Caja()
+                return None
+        case '0' | '':
+            pass
+        case _:
+            print('>>>>> Opción inválida. <<<<<')
+            input('Presiona [Enter] para continuar...')
+            MetodosCajero.Volver_a_Caja()
+            return None
+    return precio
+
+
+  def Verificar_cantidad(cantidad):
+    if not cantidad.isdigit():
+        print('>>>>> Cantidad inválida. Debe ser un número entero. <<<<<')
+        MetodosCajero.Limpiar()
+        MetodosCajero.Volver_a_Caja()
+        return None
+    if cantidad == 'n' or cantidad == '':
+        MetodosCajero.Limpiar()
+        MetodosCajero.Volver_a_Caja_principal()
+        return None
+    return int(cantidad)
 
 def Caja_principal() :
     
@@ -392,6 +495,7 @@ def Caja_principal() :
           sys.exit()
         case _:
           print('Opcion no valida.')
+
 
 
 numero_caja = 'Caja 1'
