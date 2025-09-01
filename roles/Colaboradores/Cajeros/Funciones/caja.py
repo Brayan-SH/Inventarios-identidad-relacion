@@ -1,7 +1,6 @@
 from datetime import datetime 
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../..')))
-# from Datos.Facturas.Descuentos import descuentos
 
 class MetodosCajero :
   
@@ -258,8 +257,8 @@ class MetodosCajero :
   def Volver_a_Caja_principal() :
     MetodosCajero.Limpiar()
     Caja_principal()
-    
-    
+
+
   def Generar_numero_factura():
       """Genera un número de factura único basado en la fecha y hora actual."""
       return datetime.now().strftime("F%Y%m%d%H%M%S")
@@ -362,7 +361,9 @@ class MetodosCajero :
   def Facturar(factura, cliente, productos) :
     
     with open('Datos/Facturas/facturas_de_ventas.txt', 'a', encoding='utf-8', errors='ignore') as file:
-      file.write(f"{factura['numero_factura']},{factura['caja']},{cliente['nit']},{cliente['nombre']},{productos['id']},{productos['articulo']},{productos['cantidad']},{productos['precio']},{factura['subtotal']},{factura['descuentos']},{factura['total']},{factura['forma_pago']},{factura['estado']},{factura['fecha_venta']},{factura['hora_venta']}\n")
+      linea = f"{factura['numero_factura']},{factura['caja']},{cliente['nit']},{cliente['nombre']},{productos['id']},{productos['articulo']},{productos['cantidad']},{productos['precio']},{factura['subtotal']},{factura['descuentos']},{factura['total']},{factura['forma_pago']},{factura['estado']},{factura['fecha_venta']},{factura['hora_venta']}\n"
+      
+      file.write(linea)
 
 
   def Cancelar_venta() :
@@ -467,7 +468,7 @@ class MetodosCajero :
 def Caja_principal() :
     
     while True:
-      print('\n\t----- Menu Principal -----\n')
+      print(f'\n\t----- Caja -----\n')
       print('1. Vender')
       print('2. Cancelar Venta')
       print('3. Consultar Codigo de Productos')
@@ -497,6 +498,4 @@ def Caja_principal() :
           print('Opcion no valida.')
 
 
-
-numero_caja = 'Caja 1'
-Caja_principal()
+# Caja_principal()

@@ -1,7 +1,8 @@
 F20250901021742,Caja 1,C/F,C/F,001,Cemento Nacional,2,0,300.0,True,0.0,Efectivo,Activo,01/09/2025,02:17:42
 F20250901023217,Caja 1,C/F,C/F,001,Cemento Nacional,2,150.0,300.0,True,0.0,Efectivo,Activo,01/09/2025,02:32:17
 F20250901031815,Caja 1,666666666,Javier Torres,002,Cemento Quetzal,1,250.0,250.0,False,250.0,Efectivo,Activo,01/09/2025,03:18:15
-F20250901032256,Caja 1,900001007,Diego Ramírez,003,Cemento Estructural,1,170.0,170.0,False,170.0,Efectivo,Activo, 01/09/2025,03:22:56
-F20250901033359,Caja 1,444444444,Carla Rodríguez,003,Cemento Estructural,1,147.9,147.9,False,147.9,Efectivo,Activo, 01/09/2025,03:33:59
+F20250901032256,Caja 1,900001007,Diego Ramírez,003,Cemento Estructural,1,170.0,170.0,False,170.0,Efectivo,Activo,01/09/2025,03:22:56
+F20250901033359,Caja 1,444444444,Carla Rodríguez,003,Cemento Estructural,1,147.9,147.9,False,147.9,Efectivo,Activo,01/09/2025,03:33:59
 F20250901033450,Caja 1,mynor,mynor,003,Cemento Estructural,1,150.0,150.0,False,150.0,Efectivo,Activo,01/09/2025,03:34:50
 F20250901033655,Caja 1,333333333,Luis Gómez,004,Cemento Progreso,1,175.5,195.0,True,0.0,Efectivo,Activo,01/09/2025,03:36:55
+F20250901034734,Caja 1,900001007,Diego Ramírez,009,Plywood 1/2" 4x8',1,43.2,54.0,True,0.0,Efectivo,Activo,01/09/2025,03:47:34
