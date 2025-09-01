@@ -1,13 +1,13 @@
 from datetime import datetime 
 import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
 
 class MetodosCajero :
   
   def Vender() :
 
     MetodosCajero.Limpiar()
-    print(f'------- VENDER  -------')
+    print(f'------- {numero_caja}  -------')
 
     print()
     articulo = input('→ INGRESE LA [descripcion] O [codigo] DEL ARTICULO (o n para salir) : ')
@@ -497,5 +497,5 @@ def Caja_principal() :
         case _:
           print('Opcion no valida.')
 
-
+numero_caja = 'Caja 1'
 # Caja_principal()
