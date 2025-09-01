@@ -1,9 +1,9 @@
-> • Código o ID del proveedor[1],
-> • Nombre o razón social[2],
-> • Dirección[3],
-> • Teléfono[4],
-> • Correo electrónico[5],
-> • Nombre de contacto[6],
-> • Tipo de productos que suministra[7],
-> • Estado (activo/inactivo)[8],
-> • RFC/NIT/CIF (según país)[9],
+> • Código o ID del proveedor[0]
+> • Nombre o razón social[1]
+> • Dirección[2]
+> • Teléfono[3]
+> • Correo electrónico[4]
+> • Nombre de contacto[5]
+> • Tipo de productos que suministra[6]
+> • Estado (activo/inactivo)[7]
+> • RFC/NIT/CIF (según país)[8]

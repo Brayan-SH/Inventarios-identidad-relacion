@@ -5,7 +5,7 @@
 > • Teléfono[4],
 > • Correo electrónico[5],
 > • Código de descuento[6]
-> • Numerod de Nit[7]
+> • Numero de Nit[7]
 
 - **id**: Identificador único del colaborador  
 - **nombre**: Nombre completo  

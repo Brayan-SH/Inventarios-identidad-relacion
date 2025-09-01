@@ -1,30 +1,10 @@
-C1,123456789,Juan Pérez,juan.perez@email.com,5551234,2025-01-10,activo,transferencia,1
-C2,987654321,Ana Gómez,ana.gomez@email.com,5555678,2025-02-15,activo,efectivo,2
-C3,456789123,Carlos Ruiz,carlos.ruiz@email.com,5558765,2025-03-20,inactivo,tarjeta,1
-C4,321654987,Sofía Martínez,sofia.martinez@email.com,5554321,2025-04-05,activo,transferencia,2
-C5,654987321,Pedro Sánchez,pedro.sanchez@email.com,5556789,2025-05-12,activo,efectivo,1
-C6,789123456,Laura Torres,laura.torres@email.com,5553456,2025-06-18,activo,tarjeta,2
-C7,159753486,Diego Ramírez,diego.ramirez@email.com,5552345,2025-07-22,inactivo,transferencia,1
-C8,753159486,María López,maria.lopez@email.com,5559876,2025-08-30,activo,efectivo,2
-C9,852963741,José Castillo,jose.castillo@email.com,5558765,2025-09-14,activo,tarjeta,1
-C10,147258369,Paula Herrera,paula.herrera@email.com,5557654,2025-10-01,activo,transferencia,2
-C11,369258147,Andrés Vargas,andres.vargas@email.com,5556543,2025-10-20,activo,efectivo,1
-C12,258369147,Valeria Mendoza,valeria.mendoza@email.com,5555432,2025-11-05,activo,tarjeta,2
-C13,963852741,Esteban Morales,esteban.morales@email.com,5554321,2025-11-22,inactivo,transferencia,1
-C14,741852963,Lucía Fernández,lucia.fernandez@email.com,5553210,2025-12-03,activo,efectivo,2
-C15,852741963,Raúl Jiménez,raul.jimenez@email.com,5552109,2025-12-15,activo,tarjeta,1
-C16,111111111,Ana Martinez,ana.martinez@email.com,5551234,2025-08-01,activo,transferencia,3
-C17,222222222,Pedro Sánchez,pedro.sanchez@email.com,5555678,2025-08-02,activo,efectivo,3
-C18,333333333,Luis Gómez,luis.gomez@email.com,5558765,2025-08-03,activo,tarjeta,3
-C19,444444444,Carla Rodríguez,carla.rodriguez@email.com,5554321,2025-08-04,activo,transferencia,3
-C20,555555555,Sofía Ramírez,sofia.ramirez@email.com,5552109,2025-08-05,activo,tarjeta,3
-C21,666666666,Javier Torres,javier.torres@email.com,5553456,2025-08-06,activo,efectivo,3
-C22,777111222,Martina Salas,martina.salas@email.com,5551111,2025-08-10,activo,efectivo,2
-C23,888222333,Roberto Díaz,roberto.diaz@email.com,5552222,2025-08-11,activo,tarjeta,1
-C24,999333444,Elena Castro,elena.castro@email.com,5553333,2025-08-12,activo,transferencia,2
-C25,111444555,Samuel Ortega,samuel.ortega@email.com,5554444,2025-08-13,activo,efectivo,1
-C26,222555666,Patricia León,patricia.leon@email.com,5555555,2025-08-14,activo,tarjeta,2
-C27,333666777,Tomás Herrera,tomas.herrera@email.com,5556666,2025-08-15,activo,transferencia,1
-C28,444777888,Gloria Méndez,gloria.mendez@email.com,5557777,2025-08-16,activo,efectivo,2
-C29,555888999,Raquel Pineda,raquel.pineda@email.com,5558888,2025-08-17,activo,tarjeta,1
-C30,666999000,Francisco Ríos,francisco.rios@email.com,5559999,2025-08-18,activo,transferencia,2
+F20250901021742,Caja 1,C/F,C/F,001,Cemento Nacional,2,0,300.0,True,0.0,Efectivo,Activo,01/09/2025,02:17:42
+F20250901023217,Caja 1,C/F,C/F,001,Cemento Nacional,2,150.0,300.0,True,0.0,Efectivo,Activo,01/09/2025,02:32:17
+F20250901031815,Caja 1,666666666,Javier Torres,002,Cemento Quetzal,1,250.0,250.0,False,250.0,Efectivo,Activo,01/09/2025,03:18:15
+F20250901032256,Caja 1,900001007,Diego Ramírez,003,Cemento Estructural,1,170.0,170.0,False,170.0,Efectivo,Activo,01/09/2025,03:22:56
+F20250901033359,Caja 1,444444444,Carla Rodríguez,003,Cemento Estructural,1,147.9,147.9,False,147.9,Efectivo,Activo,01/09/2025,03:33:59
+F20250901033450,Caja 1,mynor,mynor,003,Cemento Estructural,1,150.0,150.0,False,150.0,Efectivo,Activo,01/09/2025,03:34:50
+F20250901033655,Caja 1,333333333,Luis Gómez,004,Cemento Progreso,1,175.5,195.0,True,0.0,Efectivo,Activo,01/09/2025,03:36:55
+F20250901034734,Caja 1,900001007,Diego Ramírez,009,Plywood 1/2" 4x8',1,43.2,54.0,True,0.0,Efectivo,Activo,01/09/2025,03:47:34
+F20250901095232,Caja 1,111111111,Ana Martinez,002,Cemento Quetzal,1,250.0,250.0,False,250.0,Efectivo,Activo,01/09/2025,09:52:32
+F20250901095252,Caja 1,111111111,Ana Martinez,001,Cemento Nacional,1,135.0,150.0,True,0.0,Efectivo,Activo,01/09/2025,09:52:52
